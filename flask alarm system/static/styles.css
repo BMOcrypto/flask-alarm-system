@@ -1,0 +1,229 @@
+body {
+        perspective: 800px;
+        justify-content: center;
+        align-items: center;
+        height: 55%;
+        margin: auto;
+        font-family: "Digital-7 Mono", sans-serif;
+        margin-top: 50px;
+        display: flex;
+    }
+
+    .container {
+        width: 90%; /* Adjusted for responsiveness */
+        max-width: 600px; /* Set a maximum width */
+        height: auto;
+        border: 3px solid rgba(169, 172, 177, 0.5);
+        border-radius: 20px 20px 22px 22px/20px 20px 10px 10px;
+        box-shadow: inset 0 -3px 1px rgba(191, 194, 197, 0.66), inset 0 4px 2px #e7eaed, inset 4px 0 2px #e4e7ea, inset -4px 0 2px #e7eaeb, inset -17px 0 32px #fff, inset 20px 0 35px #b2b5b8, inset 0 20px 45px #adb0b5;
+        transform: rotateX(5deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #e9e8ec;
+        padding: 25px;
+        -webkit-transform: rotateX(5deg);
+        -moz-transform: rotateX(5deg);
+        -ms-transform: rotateX(5deg);
+        -o-transform: rotateX(5deg);
+    }
+
+.display {
+    transform: rotateX(5deg);
+    width: 900px;
+    height: auto;
+    padding: 0.8px;
+    margin: 80px;
+    background-color: #7f8a46;
+    text-align: center;
+    line-height: 50px;
+    font-size: 80px;
+    border-top: 0.3px solid #000000ce;
+    border-left: 0.3px solid #000000ce;
+    border-bottom: 0.1px solid #cfcfcf33;
+    border-right: 0.1px solid #cfcfcf33;
+    border-radius: 7px;
+    box-shadow: 0px 0px 50px #000000ee inset;
+    text-shadow: 0px 0px 20px #ffff0022;
+    color: #000000aa;
+    user-select: none;
+}
+
+.display-wrap {
+    transform-style: preserve-3d;
+    transform: rotateX(5deg);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: inset 2px 0 2px #aaadb0, inset 0 -1px 1px #c7c9cc, inset -1px 0 2px #b6b8bb, inset 0 1px 1px rgba(0, 0, 0, 0.42), inset 0 2px 5px rgba(135, 138, 141, 0.34), 0 1px 1px rgba(255, 255, 255, 0.71), 1px 0px 1px rgba(255, 255, 255, 0.71);
+    border: 1px solid #aaadb0;
+    overflow: hidden;
+}
+
+.keypad-container {
+    transform: rotateX(5deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.keypad {
+    transform: rotateX(5deg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    width: auto;
+    padding: 80px;
+    margin-bottom: 30px;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 70px;
+    background: #b8cbd2;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 0 #231919, 0 1px 5px rgba(35, 25, 25, 0.6), 0 1px 5px rgba(0, 0, 0, 0.29) inset, 0 3px 7px rgba(255, 255, 255, 0.32) inset;
+}
+
+    .key:hover {
+        background-color: #c8c8c8;
+        box-shadow: 0 2px 0 #231919, 0 1px 5px rgba(35, 25, 25, 0.6), 0 3px 7px rgba(0, 0, 0, 0.29) inset, 0 3px 7px rgba(0, 0, 0, 0.32) inset;
+    }
+
+.function_key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 70px;
+    background: #d9d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 0 #231919, 0 1px 5px rgba(35, 25, 25, 0.6), 0 1px 5px rgba(0, 0, 0, 0.29) inset, 0 3px 7px rgba(255, 255, 255, 0.32) inset;
+    margin-right: 50px;
+}
+
+    .function_key:hover {
+        background-color: #c8c8c8;
+        box-shadow: 0 2px 0 #231919, 0 1px 5px rgba(35, 25, 25, 0.6), 0 1px 5px rgba(0, 0, 0, 0.29) inset, 0 3px 7px rgba(255, 255, 255, 0.32) inset;
+    }
+
+.key-text {
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 48px;
+    font-family: "Droid Sans Mono", sans-serif;
+}
+
+.subscript {
+    font-size: 20px;
+    vertical-align: sub;
+    font-weight: 800;
+    bottom: 10%;
+    right: 5%;
+}
+
+.row1 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-family: "Digital-7 Mono", serif;
+}
+
+.row2 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: "Digital-7 Mono", sans-serif;
+}
+
+.ReadyStatusIndicator {
+    left: 101px;
+    top: 431px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+}
+
+    .ReadyStatusIndicator .TextReady {
+        width: 115px;
+        height: 31px;
+        text-align: center;
+        color: #1e1e1e;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .ReadyStatusIndicator .ReadyStatusLed {
+        width: 54px;
+        height: 23px;
+        background: rgba(135, 187, 60, 0.75);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+        border-radius: 9999px;
+    }
+
+.ArmedStatusIndicator {
+    width: 166px;
+    height: 39px;
+    left: 104px;
+    top: 371px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+    .ArmedStatusIndicator .ArmedStatusLed {
+        width: 54px;
+        height: 23px;
+        left: 112px;
+        top: 5px;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+        border-radius: 9999px;
+    }
+
+    .ArmedStatusIndicator .TextArmed {
+        width: 115px;
+        height: 39px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        text-align: center;
+        color: #1e1e1e;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+.engraved {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7) inset;
+    font-family: "Helvetica", sans-serif;
+    color: rgba(169, 172, 177, 0.5);
+    font-weight: 900;
+    user-select: none;
+    width: auto;
+    height: 125px;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(169, 172, 177, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15) inset;
+}
